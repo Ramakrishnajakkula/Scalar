@@ -61,9 +61,7 @@ These implementations demonstrate how each component would work in a production 
 
 **Description:** Administrative dashboard that automatically segments cold leads and provides actionable insights for re-engagement strategies.
 
-**Implementation:**
-
-![Lead Segmentation Dashboard](https://i.ibb.co/G31cF2v/segmentation-dashboard.png)
+**Implementation:** [View Lead Segmentation Implementation](https://github.com/Ramakrishnajakkula/Scalar/blob/main/utils/lead_segmentation.py)
 
 We built a functional dashboard using:
 - **MongoDB Atlas** for data storage
@@ -81,15 +79,13 @@ The prototype demonstrates:
 - **scikit-learn** for K-means clustering implementation
 - **SHAP (SHapley Additive exPlanations)** for explaining segment characteristics
 
-**Implementation:** Our actual implementation can be found in `utils/lead_segmentation.py` which uses K-means clustering to segment leads based on engagement metrics, interests, and behavior patterns.
+**Code Reference:** [utils/lead_segmentation.py](https://github.com/Ramakrishnajakkula/Scalar/blob/main/utils/lead_segmentation.py) - Uses K-means clustering to segment leads based on engagement metrics, interests, and behavior patterns.
 
 ### Personalized Re-engagement Email System
 
 **Description:** System that generates highly personalized emails for cold leads based on their profile, past interactions, and predicted interests.
 
-**Implementation:**
-
-![Email Generation System](https://i.ibb.co/kq8RP2Q/email-generation.png)
+**Implementation Approach:**
 
 We created a prototype using:
 - **OpenAI GPT-3.5** for personalized content generation
@@ -133,15 +129,13 @@ Scaler Career Advisory Team
 - **Klaviyo** for email automation and A/B testing
 - **Python NLP libraries** for analyzing previous interactions
 
-**Implementation:** The email generation system is fully implemented in `utils/email_generator.py`, which uses prompt engineering and the OpenAI API to generate personalized email content for different segments and funnel stages.
+**Code Reference:** [utils/email_generator.py](https://github.com/Ramakrishnajakkula/Scalar/blob/main/utils/email_generator.py) - Uses prompt engineering and the OpenAI API to generate personalized email content for different segments and funnel stages.
 
 ### Dynamic Content Recommendation Engine
 
 **Description:** System that serves personalized educational content to re-engaged leads based on their interests, career goals, and engagement patterns.
 
-**Implementation:**
-
-![Content Recommendation Engine](https://i.ibb.co/NxQSgLH/recommendation-engine.png)
+**Implementation Approach:**
 
 We built a prototype using:
 - **TensorFlow Recommenders** for the recommendation model
@@ -160,15 +154,13 @@ The prototype demonstrates:
 - **Pinecone** for vector similarity search of content
 - **FastAPI** for the recommendation service
 
-**Implementation:** Our content recommendation system is implemented in `utils/content_recommendation.py`, which uses a hybrid approach combining collaborative filtering and content-based methods to suggest relevant educational materials to users based on their profile and past interactions.
+**Code Reference:** [utils/content_recommendation.py](https://github.com/Ramakrishnajakkula/Scalar/blob/main/utils/content_recommendation.py) - Uses a hybrid approach combining collaborative filtering and content-based methods to suggest relevant educational materials to users based on their profile and past interactions.
 
 ### Interactive Skill Assessment Tool
 
 **Description:** Engaging assessment that helps cold leads identify skill gaps and receive a personalized learning roadmap, creating immediate value while collecting valuable data.
 
-**Implementation:**
-
-![Skill Assessment Tool](https://i.ibb.co/VT0fDvh/skill-assessment.png)
+**Implementation Approach:**
 
 We created a prototype using:
 - **React** for the frontend interface
@@ -187,15 +179,13 @@ The prototype demonstrates:
 - **D3.js** for interactive visualization of skill gaps
 - **Custom Python ML pipeline** for adaptive question selection
 
-**Implementation:** The interactive skill assessment tool is implemented in `utils/skill_assessment.py`, which provides an adaptive assessment that adjusts question difficulty based on user responses and generates personalized learning path recommendations.
+**Code Reference:** [utils/skill_assessment.py](https://github.com/Ramakrishnajakkula/Scalar/blob/main/utils/skill_assessment.py) - Provides an adaptive assessment that adjusts question difficulty based on user responses and generates personalized learning path recommendations.
 
 ### Conversational AI Career Advisor
 
 **Description:** AI-powered chat interface that helps leads explore career options, answers questions about courses, and guides them toward the most suitable learning path.
 
-**Implementation:**
-
-![Conversational AI Advisor](https://i.ibb.co/GcXCNPH/ai-advisor.png)
+**Implementation Approach:**
 
 We built a prototype using:
 - **Rasa** open-source conversational AI framework
@@ -241,15 +231,13 @@ Would you like to:
 - **DIET (Dual Intent Entity Transformer)** classifier for intent recognition
 - **SpaCy** for NLP processing
 
-**Implementation:** Our conversational AI career advisor is fully implemented in `utils/career_advisor_bot.py`, which uses NLP to understand user intent, extract entities, and provide personalized career guidance and course recommendations.
+**Code Reference:** [utils/career_advisor_bot.py](https://github.com/Ramakrishnajakkula/Scalar/blob/main/utils/career_advisor_bot.py) - Uses NLP to understand user intent, extract entities, and provide personalized career guidance and course recommendations.
 
 ### Personalized Course Recommendation & Pricing
 
 **Description:** System that recommends the optimal course package and payment plan based on the lead's profile, interests, and financial situation.
 
-**Implementation:**
-
-![Course Recommendation System](https://i.ibb.co/ggB81p9/course-recommendation.png)
+**Implementation Approach:**
 
 We built a prototype using:
 - **Python Flask** for the backend API
@@ -268,7 +256,7 @@ The prototype demonstrates:
 - **Stripe** for payment processing integration
 - **Segment** for user behavior tracking
 
-**Implementation:** The course recommendation and pricing system is integrated in our orchestration layer, which can be found in `utils/funnel_orchestrator.py`. This component connects all other systems and manages the complete lead journey through our funnel.
+**Code Reference:** [utils/funnel_orchestrator.py](https://github.com/Ramakrishnajakkula/Scalar/blob/main/utils/funnel_orchestrator.py) - Connects all system components and manages the complete lead journey through our funnel, including course recommendations and pricing options.
 
 ## Tools and Technologies Used
 
@@ -286,9 +274,7 @@ The prototype demonstrates:
 | **LangChain** | AI orchestration | Free | Used for connecting multiple AI components into workflows |
 | **SHAP** | ML explainability | Free | Implemented for making AI decisions transparent for the team |
 
-![AI Technologies Integration](https://i.ibb.co/DwSJVKM/ai-integration-flow.png)
-
-*Figure: Flow diagram showing how different AI technologies connect in our implementation*
+**Data Pipeline Integration:** [utils/data_pipeline.py](https://github.com/Ramakrishnajakkula/Scalar/blob/main/utils/data_pipeline.py) - Implements the data processing and integration between different AI technologies in our implementation.
 
 ### Development & Prototyping Tools
 
