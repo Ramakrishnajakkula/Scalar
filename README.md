@@ -27,54 +27,6 @@ I've developed a comprehensive AI-powered funnel that:
 
 ## 🔄 The Funnel Architecture
 
-```
-+-----------------------------------------------+
-|              COLD LEAD DATABASE               |
-+---------------------+-------------------------+
-                      |
-                      v
-+-----------------------------------------------+
-|         AI-POWERED LEAD SEGMENTATION          |
-|                                               |
-| +-------------+  +-----------+  +------------+|
-| |High-Potential|  |Price-     |  |Career &    ||
-| |   Leads     |  |Sensitive  |  |Skill Leads ||
-| +------+------+  +-----+-----+  +-----+------+|
-+--------|---------------|---------------|------+
-         |               |               |
-         v               v               v
-+----------------+ +------------+ +-----------------+
-|PERSONALIZED    | |VALUE-BASED | |CAREER & SKILL   |
-|RE-ENGAGEMENT   | |RE-ENGAGE   | |RE-ENGAGEMENT    |
-+-------+--------+ +-----+------+ +--------+--------+
-        |                |                 |
-        |                |                 |
-        v                v                 v
-+-----------------------------------------------+
-|        DYNAMIC CONTENT RECOMMENDATION         |
-+---------------------+-------------------------+
-                      |
-                      v
-+-----------------------------------------------+
-|         INTERACTIVE SKILL ASSESSMENT          |
-+---------------------+-------------------------+
-                      |
-                      v
-+-----------------------------------------------+
-|         CONVERSATIONAL CAREER ADVISOR         |
-+---------------------+-------------------------+
-                      |
-                      v
-+-----------------------------------------------+
-|      PERSONALIZED COURSE RECOMMENDATIONS      |
-+---------------------+-------------------------+
-                      |
-                      v
-+-----------------------------------------------+
-|               LEAD CONVERSION                 |
-+-----------------------------------------------+
-```
-
 The funnel follows these key stages:
 1. **Segmentation**: AI clustering to identify high-value cold leads
 2. **Re-engagement**: Personalized outreach based on segments
@@ -83,207 +35,104 @@ The funnel follows these key stages:
 5. **Guidance**: AI-powered career and learning recommendations
 6. **Conversion**: Personalized course offerings and enrollment
 
+| COLD LEAD DATABASE |
+|:------------------:|
+|         ↓          |
+| **AI-POWERED LEAD SEGMENTATION** |
+| High-Potential Leads → Price-Sensitive Leads → Career-Changers & Skill-Upgraders |
+|         ↓                    ↓                            ↓         |
+| PERSONALIZED RE-ENGAGEMENT → VALUE-BASED RE-ENGAGEMENT → CAREER & SKILL RE-ENGAGEMENT |
+|         ↓                    ↓                            ↓         |
+| **DYNAMIC CONTENT RECOMMENDATION** |
+|         ↓          |
+| **INTERACTIVE SKILL ASSESSMENT** |
+|         ↓          |
+| **CONVERSATIONAL CAREER ADVISOR** |
+|         ↓          |
+| **PERSONALIZED COURSE RECOMMENDATIONS** |
+|         ↓          |
+| **LEAD CONVERSION** |
+
 ## 🖼️ Implementation Architecture
 
 ### Lead Segmentation Engine
-```
-+---------------------------------------+
-|      LEAD SEGMENTATION ENGINE         |
-+----------------+----------------------+
-                 |
-     +-----------+-----------+
-     |                       |
-     v                       v
-+-------------+     +---------------+
-|DATA PROCESS |     | K-MEANS       |
-|- Cleaning   |     | CLUSTERING    |
-|- Normalize  |     |- Optimal K    |
-|- Features   |     |- Segmentation |
-+-----+-------+     +-------+-------+
-      |                     |
-      +----------+----------+
-                 |
-                 v
-      +--------------------+
-      | VISUALIZATION      |
-      |- Cluster Analysis  |
-      |- Segment Profiles  |
-      |- Action Planning   |
-      +--------------------+
-```
+
+| LEAD SEGMENTATION ENGINE |
+|:------------------------:|
+|            ↓            |
+| DATA PROCESSING → K-MEANS CLUSTERING |
+| • Cleaning<br>• Normalization<br>• Features | • Optimal K<br>• Segmentation |
+|            ↓            |
+| SEGMENT VISUALIZATION |
+| • Cluster Analysis<br>• Segment Profiles<br>• Action Planning |
 
 ### Personalized Email Generator
-```
-+----------------------------------+
-|     EMAIL GENERATION SYSTEM      |
-+---------------+------------------+
-                |
-    +-----------+----------+
-    |                      |
-    v                      v
-+----------+      +----------------+
-| SEGMENT  |      | TEMPLATE       |
-| ANALYSIS |      | SELECTION      |
-+----+-----+      +-------+--------+
-     |                    |
-     +--------+-----------+
-              |
-              v
-    +-------------------+
-    | GPT-POWERED       |
-    | PERSONALIZATION   |
-    +--------+----------+
-             |
-             v
-    +-------------------+
-    | DELIVERY & TRACK  |
-    | SYSTEM            |
-    +-------------------+
-```
+
+| EMAIL GENERATION SYSTEM |
+|:------------------------:|
+|            ↓            |
+| SEGMENT ANALYSIS → TEMPLATE SELECTION |
+|            ↓            |
+| GPT-POWERED PERSONALIZATION |
+|            ↓            |
+| DELIVERY & TRACKING SYSTEM |
 
 ### Content Recommendation Engine
-```
-+-----------------------------------+
-|    CONTENT RECOMMENDATION ENGINE  |
-+----------------+-----------------+
-                 |
-   +-------------+-------------+
-   |             |             |
-   v             v             v
-+----------+ +----------+ +------------+
-|COLLAB    | |CONTENT   | |CONTEXT     |
-|FILTERING | |FILTERING | |AWARENESS   |
-+----+-----+ +----+-----+ +-----+------+
-     |            |             |
-     +------------+-------------+
-                  |
-                  v
-       +--------------------+
-       | HYBRID MODEL       |
-       | RECOMMENDATION     |
-       +--------+-----------+
-                |
-                v
-       +--------------------+
-       | PERSONALIZED       |
-       | DELIVERY           |
-       +--------------------+
-```
+
+| CONTENT RECOMMENDATION ENGINE |
+|:-----------------------------:|
+|              ↓              |
+| COLLABORATIVE FILTERING → CONTENT-BASED FILTERING → CONTEXT-AWARE RECOMMENDATIONS |
+|              ↓              |
+| HYBRID RECOMMENDATION MODEL |
+|              ↓              |
+| PERSONALIZED CONTENT DELIVERY |
 
 ### Skill Assessment Tool
-```
-+-------------------------------+
-|     SKILL ASSESSMENT SYSTEM   |
-+-------------+----------------+
-              |
-   +----------+---------+
-   |                    |
-   v                    v
-+------------+     +-------------+
-|ADAPTIVE Q  |     |PERFORMANCE  |
-|SELECTION   |<--->|ANALYSIS     |
-+-----+------+     +------+------+
-      |                   |
-      +--------+----------+
-               |
-               v
-     +-------------------+
-     | SKILL GAP         |
-     | ANALYSIS          |
-     +--------+----------+
-              |
-              v
-     +-------------------+
-     | LEARNING PATH     |
-     | RECOMMENDATION    |
-     +-------------------+
-```
+
+| SKILL ASSESSMENT SYSTEM |
+|:------------------------:|
+|            ↓            |
+| ADAPTIVE QUESTION SELECTION ↔ PERFORMANCE ANALYSIS |
+|            ↓            |
+| SKILL GAP ANALYSIS |
+|            ↓            |
+| LEARNING PATH RECOMMENDATION |
 
 ### Career Advisor Chatbot
-```
-+------------------------------+
-|     CAREER ADVISOR CHATBOT   |
-+-------------+---------------+
-              |
-   +----------+--------+
-   |                   |
-   v                   v
-+------------+   +---------------+
-|INTENT      |   |ENTITY & CONTEXT|
-|RECOGNITION |   |TRACKING       |
-+-----+------+   +-------+-------+
-      |                  |
-      +--------+---------+
-               |
-               v
-     +-------------------+
-     | RESPONSE          |
-     | GENERATION        |
-     +--------+----------+
-              |
-              v
-     +-------------------+
-     | CONVERSATION      |
-     | MANAGEMENT        |
-     +-------------------+
-```
+
+| CAREER ADVISOR CHATBOT |
+|:------------------------:|
+|            ↓            |
+| INTENT RECOGNITION → ENTITY & CONTEXT TRACKING |
+|            ↓            |
+| RESPONSE GENERATION |
+|            ↓            |
+| CONVERSATION MANAGEMENT |
 
 ### Course Recommendation System
-```
-+------------------------------------+
-|     COURSE RECOMMENDATION SYSTEM   |
-+----------------+-------------------+
-                 |
-    +------------+-----------+
-    |                        |
-    v                        v
-+------------+      +----------------+
-|USER PROFILE|      |COURSE MATCHING |
-|ANALYSIS    |      |ALGORITHM       |
-+-----+------+      +-------+--------+
-      |                     |
-      +---------+-----------+
-                |
-                v
-      +-------------------+
-      | PRICING &         |
-      | PACKAGE OPTIONS   |
-      +--------+----------+
-               |
-               v
-      +-------------------+
-      | CONVERSION        |
-      | OPTIMIZATION      |
-      +-------------------+
-```
+
+| COURSE RECOMMENDATION SYSTEM |
+|:-----------------------------:|
+|              ↓              |
+| USER PROFILE ANALYSIS → COURSE MATCHING ALGORITHM |
+|              ↓              |
+| PERSONALIZED PRICING & PACKAGE OPTIONS |
+|              ↓              |
+| ENROLLMENT CONVERSION OPTIMIZATION |
 
 ## 🔧 Technical Implementation
 
 The system is built on modular components that work together through a central orchestration layer:
 
-```
-+-----------------------------------------------+
-|        AI FUNNEL ORCHESTRATION LAYER          |
-+---------------------+-------------------------+
-                      |
-                      v
-+-----------------------------------------------+
-|            CUSTOMER DATA PLATFORM             |
-|              (Segment/MongoDB)                |
-+-+-------------+-------------+---------+-------+
-  |             |             |         |
-  v             v             v         v
-+-----+     +-------+    +------+    +------+
-|Lead |     |Email  |    |Content|    |Career|
-|Seg  |     |Gen    |    |Rec    |    |Bot   |
-+--+--+     +---+---+    +---+---+    +--+---+
-   |            |            |            |
-   v            v            v            v
-+-----------------------------------------------+
-|           EVENT STREAMING LAYER               |
-|              (RabbitMQ/Kafka)                 |
-+-------------+---------------+----------------+
-```
+| AI FUNNEL ORCHESTRATION LAYER |
+|:-----------------------------:|
+|              ↓              |
+| **CUSTOMER DATA PLATFORM** (Segment/MongoDB) |
+| Lead Segmentation → Email Generator → Content Recommendation → Skill Assessment → Career Advisor |
+|              ↓              |
+| **EVENT STREAMING LAYER** (RabbitMQ/Kafka) |
+|    ANALYTICS ENGINE    |    API GATEWAY    |
 
 Implementation includes:
 - Python modules for each AI component
@@ -355,6 +204,3 @@ Detailed documentation is available in the following files:
 ## 🙏 Acknowledgements
 
 This project was developed as part of the Scaler AI APM Intern Assignment. Special thanks to GitHub Copilot for assistance with implementation.
-#   S c a l a r 
- 
- 

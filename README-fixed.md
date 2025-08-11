@@ -35,33 +35,104 @@ The funnel follows these key stages:
 5. **Guidance**: AI-powered career and learning recommendations
 6. **Conversion**: Personalized course offerings and enrollment
 
-![Funnel Architecture](https://i.imgur.com/lqMnNiO.png)
+| COLD LEAD DATABASE |
+|:------------------:|
+|         ↓          |
+| **AI-POWERED LEAD SEGMENTATION** |
+| High-Potential Leads → Price-Sensitive Leads → Career-Changers & Skill-Upgraders |
+|         ↓                    ↓                            ↓         |
+| PERSONALIZED RE-ENGAGEMENT → VALUE-BASED RE-ENGAGEMENT → CAREER & SKILL RE-ENGAGEMENT |
+|         ↓                    ↓                            ↓         |
+| **DYNAMIC CONTENT RECOMMENDATION** |
+|         ↓          |
+| **INTERACTIVE SKILL ASSESSMENT** |
+|         ↓          |
+| **CONVERSATIONAL CAREER ADVISOR** |
+|         ↓          |
+| **PERSONALIZED COURSE RECOMMENDATIONS** |
+|         ↓          |
+| **LEAD CONVERSION** |
 
 ## 🖼️ Implementation Architecture
 
 ### Lead Segmentation Engine
-![Lead Segmentation](https://i.imgur.com/7LFGkuW.png)
+
+| LEAD SEGMENTATION ENGINE |
+|:------------------------:|
+|            ↓            |
+| DATA PROCESSING → K-MEANS CLUSTERING |
+| • Cleaning<br>• Normalization<br>• Features | • Optimal K<br>• Segmentation |
+|            ↓            |
+| SEGMENT VISUALIZATION |
+| • Cluster Analysis<br>• Segment Profiles<br>• Action Planning |
 
 ### Personalized Email Generator
-![Email Generation](https://i.imgur.com/kbwl0Nh.png)
+
+| EMAIL GENERATION SYSTEM |
+|:------------------------:|
+|            ↓            |
+| SEGMENT ANALYSIS → TEMPLATE SELECTION |
+|            ↓            |
+| GPT-POWERED PERSONALIZATION |
+|            ↓            |
+| DELIVERY & TRACKING SYSTEM |
 
 ### Content Recommendation Engine
-![Content Recommendation](https://i.imgur.com/9jftcb3.png)
+
+| CONTENT RECOMMENDATION ENGINE |
+|:-----------------------------:|
+|              ↓              |
+| COLLABORATIVE FILTERING → CONTENT-BASED FILTERING → CONTEXT-AWARE RECOMMENDATIONS |
+|              ↓              |
+| HYBRID RECOMMENDATION MODEL |
+|              ↓              |
+| PERSONALIZED CONTENT DELIVERY |
 
 ### Skill Assessment Tool
-![Skill Assessment](https://i.imgur.com/CAL5lYX.png)
+
+| SKILL ASSESSMENT SYSTEM |
+|:------------------------:|
+|            ↓            |
+| ADAPTIVE QUESTION SELECTION ↔ PERFORMANCE ANALYSIS |
+|            ↓            |
+| SKILL GAP ANALYSIS |
+|            ↓            |
+| LEARNING PATH RECOMMENDATION |
 
 ### Career Advisor Chatbot
-![Career Advisor](https://i.imgur.com/yHVpHnp.png)
+
+| CAREER ADVISOR CHATBOT |
+|:------------------------:|
+|            ↓            |
+| INTENT RECOGNITION → ENTITY & CONTEXT TRACKING |
+|            ↓            |
+| RESPONSE GENERATION |
+|            ↓            |
+| CONVERSATION MANAGEMENT |
 
 ### Course Recommendation System
-![Course Recommendation](https://i.imgur.com/UUnrMWO.png)
+
+| COURSE RECOMMENDATION SYSTEM |
+|:-----------------------------:|
+|              ↓              |
+| USER PROFILE ANALYSIS → COURSE MATCHING ALGORITHM |
+|              ↓              |
+| PERSONALIZED PRICING & PACKAGE OPTIONS |
+|              ↓              |
+| ENROLLMENT CONVERSION OPTIMIZATION |
 
 ## 🔧 Technical Implementation
 
 The system is built on modular components that work together through a central orchestration layer:
 
-![Technical Architecture](https://i.imgur.com/zN6WeNb.png)
+| AI FUNNEL ORCHESTRATION LAYER |
+|:-----------------------------:|
+|              ↓              |
+| **CUSTOMER DATA PLATFORM** (Segment/MongoDB) |
+| Lead Segmentation → Email Generator → Content Recommendation → Skill Assessment → Career Advisor |
+|              ↓              |
+| **EVENT STREAMING LAYER** (RabbitMQ/Kafka) |
+|    ANALYTICS ENGINE    |    API GATEWAY    |
 
 Implementation includes:
 - Python modules for each AI component
