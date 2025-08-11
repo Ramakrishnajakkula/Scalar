@@ -1,0 +1,48 @@
+Scaler AI APM Intern – Assignment Brief
+Goal: Design and prototype a lead acquisition + conversion funnel for an edtech offering
+(like a free masterclass, premium 12 month course, career consultation call with an expert) using
+AI and automation tools.
+
+Prompt
+You're tasked with building an AI-led, self-serve funnel that attracts the right leads, warms them
+up, and drives them to take an action (sign up/book a call/etc.) and eventually helps them
+convert into buying the premium product seamlessly. Conversion is key.
+You are basically required to build a tool/feature that helps convert a lead. You can imagine
+anything and everything to do so. No limitation on the scope of intervention.
+
+What You Need to Do
+1. Identify a Growth Opportunity
+Pick one of these use cases (or pitch your own):
+● Drive more signups for a free live class
+Example of a Free Class:
+(https://www.scaler.com/event/roadmap-to-data-engineering-6a/)
+● Increase the joining % of the folks who registered for the free live class
+● Increase career consultation call bookings
+● Engage cold leads from the large backlog of leads who have not converted in the past
+● Convert blog readers/free video viewers into leads
+
+2. Design the Funnel
+● Sketch out the lead journey (cold → warm → convert)
+● Identify points where AI can be plugged in to personalize, automate, or optimize
+
+● You can build pretty much anything, end goal being: It should convert the lead.
+
+3. Build or Prototype Key Touchpoints and showcase the tools you have used
+● Use AI tools to build a functioning prototype
+● Highlight what you used (if free) or explain how you would use them (if paid)
+● Feel free to use any product basis comfort
+
+5. Present Your Work
+Create a Notion page or PDF deck that includes:
+● Clear explanation of the funnel and problem you’re solving
+● Screenshots or screen recordings of what you built
+● A short write-up on “If I had 2 more weeks, here’s what I’d do next”
+
+What We’re Evaluating
+● Growth thinking and funnel design logic
+● AI Tool awareness, sampling of the right tool and smart usage
+● Creativity and speed of execution
+● Ability of the opportunity identified to create a large impact
+
+Submission Format: Notion, deck, or short Loom walkthrough + link to prototypes
+Deadline: 3-4 days
